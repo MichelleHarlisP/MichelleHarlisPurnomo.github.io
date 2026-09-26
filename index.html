@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web - Michelle Harlis Purnomo</title>
+    
+    <!-- 2. HTML Favicon (Pastikan file favicon.ico ada, atau hapus baris ini jika tidak ada) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        /* 5. HTML CSS & 6. HTML Background/Color Text */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            /* --- BAGIAN BACKGROUND YANG DIUBAH --- */
+            background-image: url('background.jpeg'); /* Ganti dengan nama file fotomu */
+            background-size: cover;       /* Agar foto memenuhi seluruh layar */
+            background-position: center;  /* Agar foto selalu di tengah */
+            background-repeat: no-repeat; /* Agar foto tidak mengulang */
+            background-attachment: fixed; /* Agar foto tidak ikut scroll */
+            /* ------------------------------------- */
+
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: white;
+            width: 100%;
+            max-width: 800px;
+            padding: 40px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center; /* 7. HTML Align */
+        }
+
+        /* 3. HTML Link Style (untuk navbar atau social media) */
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* 1. HTML Picture (Style untuk foto profile) */
+       /* Ubah dari .foto-profil.jpeg menjadi .foto-profil */
+.foto-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat bulat */
+    object-fit: cover;
+    border: 3px solid #333;
+    margin-bottom: 20px;
+}
+
+        /* 4. HTML Heading 1-5 Style */
+                /* 4. HTML Heading 1-5 Style */
+        h1 { font-size: 28px; margin: 10px 0; color: #222; } /* Nama jadi lebih besar & hitam tegas */
+        
+        /* NIM */
+        h2 { font-size: 18px; margin: 5px 0; color: #444; font-weight: 600;} 
+        
+        /* Fakultas & Judul Tabel */
+        h3 { font-size: 16px; margin: 5px 0 10px 0; color: #555; font-weight: 600; } 
+        
+        /* Program Studi */
+        h4 { font-size: 15px; margin: 0 0 20px 0; color: #666; font-weight: 600; }
+
+        /* Social Media Icons Area */
+        .social-links {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+         .social-icon {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px; /* <--- Ubah dari 14px jadi 10px */
+            font-weight: normal; /* <--- Ubah dari bold jadi normal */
+            color: #333;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            background-color: #333;
+            color: white;
+            transition: 0.3s;
+        }
+
+        /* 10. HTML Table */
+        table {
+            margin: 0 auto 30px auto;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            width: 30%;
+        }
+
+        /* Footer / Alur */
+        .footer-note {
+            font-size: 12px;
+            color: #888;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Bagian Foto -->
+        <!-- 1. HTML Picture -->
+        <!-- Ganti bagian src dan class-nya -->
+<img src="foto-profil.jpeg" alt="Foto Profil" class="foto-profil">
+        
+        <!-- Bagian Identitas -->
+        <!-- 4. HTML Heading -->
+        <h1>Michelle Harlis Purnomo</h1>
+        <h2>NIM: 102042500024</h2>
+        <h3>Fakultas Rekayasa Industri</h3>
+        <h4>Program Studi Sistem Informasi</h4>
+
+        <!-- Social Media Buttons -->
+        <!-- 3. HTML Link -->
+        <div class="social-links">
+            <!-- Menggunakan target="_blank" sesuai instruksi -->
+            <a href="https://github.com/MichelleHarlisP" target="_blank" class="social-icon">Github</a>
+            <a href="https://www.instagram.com/_michelle_iceng/" target="_blank" class="social-icon">Instagram</a>
+            <a href="https://id.linkedin.com/in/michelle-harlis-purnomo-845a1a362" target="_blank" class="social-icon">LinkedIn</a>
+        </div>
+
+        <!-- Tabel Data Diri (Elemen tambahan yg diminta) -->
+              <!-- Tabel Keahlian -->
+        <h3>Keahlian</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Keahlian</th>
+                    <th>Tingkat</th>
+                    <th>Keterangan / Tools</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jaringan Komputer</td>
+                    <td>Menengah</td>
+                    <td>VLAN, Routing, Cisco Packet Tracer</td>
+                </tr>
+                <tr>
+                    <td>Cybersecurity (CTF & Osint)</td>
+                    <td>Menengah</td>
+                    <td>Open Source Intelligence, Capture The Flag Player</td>
+                </tr>
+                <tr>
+                    <td>Perancangan Basis Data</td>
+                    <td>Menengah</td>
+                    <td>SQL, ERD, Stored Procedure, Trigger</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Footer Keterangan -->
+        <div class="footer-note">
+            <p>
+                Personal Web ini merupakan tugas <strong>Studi Kasus 1</strong> pada mata kuliah <strong>Pengembangan Aplikasi Website</strong>.
+            </p>
+            <p class="copyright">
+                &copy; 2026 Michelle Harlis Purnomo. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
